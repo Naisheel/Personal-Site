@@ -1,0 +1,70 @@
+body{
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 2em;
+
+}
+h1{
+  margin: 50px auto 0 auto;
+  color: #66BFBF;
+  /* we can use em/rem/% in margin top also */
+  font-family: 'Sacramento', cursive;
+  /* line-height: 2; */
+  font-size: 5.625rem;
+  /* font-size: 5.625em; */
+  /* making font size to be 5.625 em along with having it 2 em in the body does not makes the size to be 5.625 em but it increases the font size over
+  2 em , i.e. it makes the size double or more greater
+  The same thing applies if we had used percentage
+  Only in px remains constant*/
+  /* So for getting rid of this error, we have rem as the root em function which ignores the previously applied size and works independent of it. */
+  /* font-size: 562.5%; */
+  /* font-size: 90px; */
+  /* 100% font size is 16px */
+  /* 1em is also eqiuivalent to 16px */
+  /* width: 10%;
+  margin: 0 auto 0 auto; */
+  /* generally the center align applied at the body part works only if the part is an inline-block element or if it has entire line reserved for itself.
+  so, here if we change the width % of h1, then it will be back to the alignment to the front of the screen, so to bring it back to centre, we use
+  the feature of the margin known as auto, here in this case we have set the left and the right margin as auto so it brings the text back to the center
+  of the screen */
+}
+h2{
+  color: #66BFBF;
+  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+}
+h3{
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.top_container{
+  background-color: #E8F9FD;
+  position: relative;
+  padding-top: 100px;
+}
+/* .middle_container{
+  background-color: red;
+}
+.bottom_container{
+
+  background-color: yellow;
+} */
+
+.daiict{
+  text-decoration: underline;
+}
+
+.bottom-cloud{
+  /* take_out_from_html_flow_using_absolute_positioning to bring mountain at middle because the bottom cloud was obstructing it */
+  position:absolute;
+  left: 300px;
+bottom: 300px;
+}
+.top-cloud{
+  position:absolute;
+  right: 300px;
+  top: 50px;
+}
